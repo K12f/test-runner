@@ -16,6 +16,7 @@ deploy_production:
       APP_LOG_LEVEL=debug
       ">>.env
     - git rev-parse --short HEAD
+    - git pull origin master
   tags:
     - tset-runner-tags
   only:
