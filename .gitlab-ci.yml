@@ -9,7 +9,12 @@ after_script:
 deploy_production:
   stage: deploy
   script:
-    - echo "deploy script"
+    - echo "ME=Laravel
+      APP_ENV=local
+      APP_KEY=ooxx
+      APP_DEBUG=true
+      APP_LOG_LEVEL=debug
+      ">>.env
   tags:
     - test-runner-tags
   only:
