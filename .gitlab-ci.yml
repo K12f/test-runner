@@ -5,6 +5,7 @@ before_script:
   - echo "deploy start"
 after_script:
   - echo "deploy end"
+  - cat index.php
 deploy_production:
   stage: deploy
   script:
