@@ -1,5 +1,5 @@
 stages:
-  - deploy
+  - build
 
 before_script:
   - echo "deploy start"
@@ -7,7 +7,7 @@ after_script:
   - echo "deploy end"
   - cat index.html
 deploy_production:
-  stage: deploy
+  stage: build
   script:
     - echo "ME=Laravel
       APP_ENV=local
