@@ -17,7 +17,7 @@ deploy_production:
       ">>.env
     - git rev-parse --short HEAD
   tags:
-    - test-runner-tags2
+    - tset-runner-tags
   only:
     - master
   when: always
