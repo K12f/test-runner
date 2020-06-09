@@ -14,3 +14,4 @@ deploy_production:
     - test-runner-tags
   only:
     - master
+  when: always
