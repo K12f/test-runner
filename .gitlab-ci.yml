@@ -3,7 +3,6 @@ stages:
 
 before_script:
   - echo "deploy start"
-  - php -v
 after_script:
   - echo "deploy end"
 deploy_production:
