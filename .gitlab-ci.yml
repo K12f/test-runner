@@ -10,7 +10,6 @@ deploy_production:
   stage: deploy
   script:
     - git pull origin master
-    - git checkout master
   tags:
     - test-runner-tags
   only:
