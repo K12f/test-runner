@@ -15,6 +15,7 @@ deploy_production:
       APP_DEBUG=true
       APP_LOG_LEVEL=debug
       ">>.env
+    - git rev-parse --short HEAD
   tags:
     - test-runner-tags
   only:
