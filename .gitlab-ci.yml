@@ -1,0 +1,16 @@
+stages:
+  - deploy
+
+before_script:
+  - echo "deploy start"
+  - php -v
+after_script:
+  - echo "deploy end"
+deploy_production:
+  stage: deploy
+  script:
+    - git pull
+  tags:
+    - test_runner
+  only:
+    - master
