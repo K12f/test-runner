@@ -9,7 +9,7 @@ after_script:
 deploy_production:
   stage: deploy
   script:
-    - git pull origin master
+    - echo "123"
   tags:
     - test-runner-tags
   only:
