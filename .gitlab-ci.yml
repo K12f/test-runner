@@ -11,6 +11,6 @@ deploy_production:
   script:
     - git pull
   tags:
-    - test_runner
+    - test-runner-go
   only:
     - master
