@@ -8,7 +8,7 @@ after_script:
 deploy_production:
   stage: deploy
   script:
-    - sudo git pull origin master
+    - git pull origin master
   tags:
     - test-runner-tags
   only:
